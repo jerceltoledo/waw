@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Landing Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #fbd3e9; /* Light Pink Background */
+            color: #333;
+        }
+
+        header {
+            background-color: #e53b9e; /* Dark Blue Header */
+            color: #fff;
+            padding: 20px;
+            text-align: right;
+        }
+
+        
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff; /* White Content Background */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px; /* Rounded Corners */
+        }
+
+        h1, h2, p {
+            color: #d328c2; /* Dark Blue Text */
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            background-color: #de668e; /* Pink Button */
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background-color: #c2185b; /* Darker Pink on Hover */
+        }
+
+        footer {
+            background-color: #1a237e; /* Dark Blue Footer */
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .logout-btn {
+            background-color: #d57293; /* Pink Logout Button */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .logout-btn:hover {
+            background-color: #c2185b; /* Darker Pink on Hover */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </header>
+
+    <section>
+        <h2>Welcome to My Landing Page</h2>
+        <p>Hello</p>
+        <p>Kitty!</p>
+    </section>
+
+
+    <script>
+        function logout() {
+            // Implement your logout logic here
+            alert('You have been logged out.');
+            // Redirect the user to the login page after logging out
+            window.location.href = 'jercel.html';
+        }
+    </script>
+
+</body>
+</html>
+
